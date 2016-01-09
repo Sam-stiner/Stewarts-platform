@@ -270,6 +270,8 @@ void showRot(){
    lcd.print((int)(arr[4]*deg2rad));
    lcd.setCursor(11,1);
    lcd.print((int)(arr[5]*deg2rad));
+   
+   Serial.print("Rot", (int)(arr[3]*deg2rad), (int)(arr[4]*deg2rad), (int)(arr[5]*deg2rad));
 }
 void showComm(){
    if(shown==0){
@@ -300,6 +302,8 @@ void showLoc(){
    lcd.print((int)(arr[1]*25.4));
    lcd.setCursor(11,1);
    lcd.print((int)(arr[2]*25.4));
+   
+   Serial.print("Loc", (int)(arr[0]*25.4), (int)(arr[1]*25,4), (int)(arr[2]*25.4));
 }
 #endif
 
