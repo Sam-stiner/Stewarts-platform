@@ -12,7 +12,7 @@ while True:
 time.sleep(1) #allows python to start comunication with the arduino
 
 print ('Ready for user input.')
-print ('Please type your command...(type "help" for help)')
+print ('Please type your command...(type "help" for command list)')
 
 command = input() #user input for platform control
 
@@ -90,4 +90,5 @@ for command = ('switchirdaoff'):
 	arduino.write(7)
 	print ('IRDA control turned off')
 	
-
+else:
+	print ('invalid command type "help" for command list')
